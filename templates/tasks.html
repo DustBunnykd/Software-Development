@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Tasks</title>
+</head>
+<body>
+    <h1>Tasks You Can Do</h1>
+    <ul>
+        {% for t in todo %}
+            <li>{{ t }}</li>
+        {% endfor %}
+    </ul>
+    <p> This is the task score{{tar}}</p>
+</body>
+</html>
