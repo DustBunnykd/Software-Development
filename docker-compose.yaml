@@ -1,0 +1,12 @@
+services:
+  Python:
+    build: 
+      context: .
+    ports:
+     - 5000:5004
+    image: dustbunnykd/racoon
+    restart: always
+    networks:
+      - webnet
+networks:
+ webnet:

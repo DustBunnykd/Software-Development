@@ -5,7 +5,7 @@ docker build -t <imagename> .
 # To remove docker image:
 docker rmi <imageid>
 # To create a container: (-dp is to run the command in the background, containerport is the port number in the dockerfile, applicationport is the port in the app.py, dockerimg is the docker image name, the latest is for the lastest version of the image)
-docker run --name <containername> -dp <containerport>: <applicationport> <dockerimgname>:latest
+docker run --name <containername> -dp <applicationport>:<containerport> <dockerimgname>:latest
 # Example
 docker run --name web1 -dp 5002:5007 birdimg:latest
 # container id
